@@ -1,0 +1,45 @@
+
+<div class="content-wrapper">
+
+        <div class="row">
+ 
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Gestion des Villes</h2>
+                    </div>
+                    <div class="card-body">
+                        <a href="" class="btn btn-success btn-sm" title="Ajouter une Nouvelle ville">
+                            <i class="fa fa-plus" aria-hidden="true"></i> Ajouter une Nouvelle Ville
+                        </a>
+                        <br/>
+                        <br/>
+                        <div class="table-responsive">
+                        <table class="table table-striped table-bordered" id="bootstrap-data-table-export">
+                                <thead>
+                                    <tr>
+                                        <th>Libelle</th>
+                                        <th width="220px">Action</th>
+                                      </tr>
+                                      <tr *ngFor="let p of Listeville">
+                                        <td>{{ p.mLibelle }}</td>
+                                        <td>
+                                         
+                                          <a href="#"  class="btn btn-primary">Edit</a>
+                                          <button type="button"  class="btn btn-danger">Delete</button>
+                                        </td>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                              
+                                </tbody>
+                            </table>
+                        </div>
+ 
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
